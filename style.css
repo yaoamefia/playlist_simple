@@ -1,0 +1,75 @@
+html {
+  font-size: 10px;
+  background-image: url("img/warming_tropics.jpg");
+  background-size: cover;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 4rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .60s ease;
+  height: 30rem;
+  width: 20rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
+  position: center;
+}
+
+.playing-1 {
+  transform: scale(1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+.playing-2 {
+  transform: scale(1);
+  border-color: #ff6600;
+  box-shadow: 0 0 1rem #ff6600;
+}
+.playing-3 {
+  transform: scale(1);
+  border-color: #00ff8c;
+  box-shadow: 0 0 1rem #00ff8c;
+}
+.playing-4 {
+  transform: scale(1);
+  border-color: #00bfff;
+  box-shadow: 0 0 1rem #00bfff;
+}
+kbd {
+  display: block;
+  font-size: 1.5rem;
+}
+
+.sound {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
+
+.img{
+
+  height: 25rem;
+  width: 20rem;
+  background: rgba(0,0,0,0.4);
+}

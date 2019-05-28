@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>html 5 audio player</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  #playlist{
+    list-style: none;
+  }
+  #playlist li a {
+    color:black;
+    text-decoration: none;
+  }
+  #playlist .current-song a{
+    color:blue;
+  }
+
+  </style>
+
+</head>
+<body>
+
+
+<audio src="" controls id="audioPlayer">
+  Sorry, your browser doesn't support html5
+</audio>
+
+<ul id="playlist">
+<div class="keys">
+
+  <div data-key="65" class="key playing-1">
+    <li class="current-song"><a href="sounds/Gbessi.mp3" alt="Gbessi"> <img class="img"src="img/toofan.jpg" alt="Gbessi"/></a></li>
+    <kbd>Toofan</kbd>
+    <span class="sound">Song: Gbessi Gbeko</span>
+  </div>
+
+  <div data-key="83" class="key playing-2">
+    <li><a href="sounds/Dumebi.mp3" alt="Dumebi"> <img class="img"src="img/rema.jpg" alt="Dumebi"/></a></li>
+    <kbd>Rema</kbd>
+    <span class="sound">Song: Dumebi</span>
+  </div>
+
+  <div data-key="68" class="key playing-3">
+    <li><a href="sounds/run-jozi.mp3" alt="Run Jozi"> <img class="img"src="img/run-jozi.jpg" alt="Run Jozi"/></a></li>
+    <kbd>AKA ft K.O</kbd>
+    <span class="sound">Song: Run Jozi</span>
+  </div>
+
+  <div data-key="70" class="key playing-4">
+    <li><a href="sounds/tetema.mp3"alt="Tetema">  <img class="img"src="img/diamond-rayvanny1.jpg" alt="Tetema"/></a></li>
+    <kbd>diamond platnumz ft rayvanny</kbd>
+    <span class="sound">Song: Tetema</span>
+  </div>
+
+</div>
+
+</ul>
+
+<audio data-key="65" src="sounds/Gbessi.mp3"></audio>
+<audio data-key="83" src="sounds/Dumebi.mp3"></audio>
+<audio data-key="68" src="sounds/run-jozi.mp3"></audio>
+<audio data-key="70" src="sounds/tetema.mp3"></audio>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+<script src="index.js" charset="utf-8"></script>
+</body>
+</html>
